@@ -27,8 +27,9 @@ export default function Footer() {
         {/* Top section */}
         <div style={{
           display: "grid",
-          gridTemplateColumns: "1.8fr 1fr 1fr 1fr",
-          gap: "60px",
+          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gap: "40px",
+        
           marginBottom: "64px",
         }}>
 

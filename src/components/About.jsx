@@ -23,8 +23,8 @@ export default function About() {
       <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 2rem", position: "relative" }}>
         <div style={{
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "100px",
+          gridTemplateColumns: "1fr",
+          gap: "60px",
           alignItems: "center",
         }}>
 
@@ -178,3 +178,8 @@ export default function About() {
     </section>
   );
 }
+<style>{`
+        @media (min-width: 768px) {
+          .about-grid { grid-template-columns: 1fr 1fr !important; gap: 100px !important; }
+        }
+      `}</style>
